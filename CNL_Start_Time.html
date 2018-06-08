@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>CNL START TIME EMAILER</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="C:/Users/ukplayout/Documents/Development/CNL_Start_Time_Emailer/css/main.css">
+
+  <link rel="stylesheet" href="C:/Users/ukplayout/Documents/Development/CNL_Start_Time_Emailer/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="C:/Users/ukplayout/Documents/Development/CNL_Start_Time_Emailer/js/date_picker.js"></script>
+
+</head>
+
+<body>
+
+
+<HEADER>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">CNL EMAILER</h1>
+      <p class="lead">This tool emails the start time for a new playlist to CNL. Simply fill out the required data and hit send.</p>
+    </div>
+  </div>
+
+</HEADER>
+
+<MAINCONTENT>
+<form id="myForm">
+  <div class="container">
+    <div class="row justify-content-start">
+          <div class="col-3">
+            <label>Date</label>
+            <input type="text" required class="form-control" id="datepicker">
+          </div>
+
+          <div class="col-3">
+            <label for="exampleInputEmail1">Channel</label>
+            <input type="text" class="form-control" id="channel" placeholder="HOTBIRD" readonly>
+          </div>
+
+          <div class="col-3">
+            <label for="exampleInputPassword1">Timecode</label>
+            <input type="text" required id="timecode" pattern="(^(?:(?:[0-1][0-9]|[0-2][0-3]):)(?:[0-5][0-9]:){2}(?:[0-2][0-9])$)" class="form-control" placeholder="00:00:00:00">
+          </div>
+    </div>
+    <div class="row justify-content-center">
+          <div class="col-3">
+            <label for="exampleInputEmail1">Channel</label>
+            <input type="text" class="form-control" id="channel" placeholder="YAMAL" readonly>
+          </div>
+
+          <div class="col-3">
+            <label for="exampleInputPassword1">Timecode</label>
+            <input type="text" required id="timecode" pattern="(^(?:(?:[0-1][0-9]|[0-2][0-3]):)(?:[0-5][0-9]:){2}(?:[0-2][0-9])$)" class="form-control" placeholder="00:00:00:00">
+          </div>
+    </div>
+    <div class="row justify-content-center">
+          <div class="col-3">
+            <label for="exampleInputEmail1">Channel</label>
+            <input type="text" class="form-control" id="channel" placeholder="USA" readonly>
+          </div>
+
+          <div class="col-3">
+            <label for="exampleInputPassword1">Timecode</label>
+            <input type="text" required id="timecode" pattern="(^(?:(?:[0-1][0-9]|[0-2][0-3]):)(?:[0-5][0-9]:){2}(?:[0-2][0-9])$)" class="form-control" placeholder="00:00:00:00">
+          </div>
+    </div>
+</br>
+    <div class="row justify-content-end">
+      <div class="col-6">
+          <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+
+  </div>
+</div>
+
+</form>
+
+
+
+</MAINCONTENT>
+
+
+</body>
+
+</html>

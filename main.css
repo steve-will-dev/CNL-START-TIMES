@@ -1,13 +1,13 @@
-.display-4 {
-color: #034ea2;
-
-}
-
-
-input:invalid {
- background: hsla(0, 90%, 70%, 1);
-}
-
-input:valid {
- background: hsla(100, 90%, 70%, 1);
-}
+.display-4 {
+color: #034ea2;
+
+}
+
+
+input:invalid {
+ background: hsla(0, 90%, 70%, 1);
+}
+
+input:valid {
+ background: hsla(100, 90%, 70%, 1);
+}
